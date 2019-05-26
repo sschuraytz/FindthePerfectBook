@@ -3,7 +3,7 @@ package schuraytz.books;*/
 /*
 import java.util.List;
 
-public class schuraytz.books.Book {
+public class schuraytz.books.Book_NY {
 
     private String title;
     private String url;
@@ -32,7 +32,7 @@ public class schuraytz.books.Book {
 *//*
 
 
-public class Book {
+public class Book_NY {
     private String kind;
     private float totalItems;
     // ArrayList<Object> items = new ArrayList<Object>();

@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41dbbe23-df84-45da-ac34-6deb365dce04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/books/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/books/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/books/BookFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/books/BookFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/books/BookList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/books/BookList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPIClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/books/BookFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/books/BookFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/books/BookFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/books/BookFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/books/BookFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/books/BookFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/books/BookFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/books/BookFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/books/BooksAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/books/BooksAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/books/BooksAPIClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/books/BooksAPIClient.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="216">
+              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,48 +41,96 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BookFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="136">
+              <caret line="190" column="68" selection-start-line="190" selection-start-column="68" selection-end-line="190" selection-end-column="68" />
               <folding>
+                <element signature="e#0#6442#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
-                <element signature="e#1795#1796#0" expanded="true" />
-                <element signature="e#2121#2122#0" expanded="true" />
-                <element signature="e#2195#2196#0" expanded="true" />
-                <element signature="e#2856#2857#0" expanded="true" />
+                <element signature="e#5591#5592#0" expanded="true" />
+                <element signature="e#5645#5646#0" expanded="true" />
+                <element signature="e#5980#6118#0" expanded="true" />
+                <element signature="e#6117#6118#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Item.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/NYBooksAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+            <state relative-caret-position="96">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/GoogleBooksResponse.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/NYBooksAPIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="1">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/NYTimesResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Result_NY.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/ResultsList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Book_NY.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-85">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BuyLink_NY.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-118">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Isbn_NY.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-118">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -93,8 +151,11 @@
       <find>Book</find>
       <find>books</find>
       <find>bookList</find>
-      <find>showBook</find>
       <find>controls</find>
+      <find>item</find>
+      <find>showBook</find>
+      <find>searchButton</find>
+      <find>re</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,8 +174,6 @@
         <option value="$PROJECT_DIR$/src/main/java/BookList.java" />
         <option value="$PROJECT_DIR$/src/main/java/BookFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/BookList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPIClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/GoogleBooksResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/VolumeInfo.java" />
@@ -133,7 +192,18 @@
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/Epub.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/AccessInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPIClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/Book_NY.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/BuyLink_NY.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/Isbn_NY.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/BookList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/NYBooksAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/NYBooksAPIClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/Results_NY.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/Result_NY.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/ResultsList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/NYTimesResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/books/BookFrame.java" />
       </list>
     </option>
@@ -151,9 +221,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-11" />
-    <option name="width" value="815" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1059" />
+    <option name="width" value="872" />
     <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -162,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -197,22 +266,40 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="books" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FindThePerfectBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FindThePerfectBook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FindThePerfectBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FindThePerfectBook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schuraytz-mco152-2019" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SB\IdeaProjects\FindThePerfectBook\src\main\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SB\IdeaProjects\FindThePerfectBook\src\main\java\schuraytz\books" />
       <recent name="C:\Users\SB\IdeaProjects\FindThePerfectBook\src\main\java" />
     </key>
   </component>
@@ -265,10 +352,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19595142" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11174089" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -277,7 +364,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17761989" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40674955" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46003553" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -285,7 +372,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3291367" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3285968" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3268206" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -311,13 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11203">
           <caret line="846" column="28" lean-forward="true" selection-start-line="846" selection-start-column="28" selection-end-line="846" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/internal/functions/Functions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -391,13 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BookList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
@@ -408,24 +481,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Item.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/GoogleBooksResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="170">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/javax/swing/JOptionPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/stream/JsonReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar!/com/google/gson/internal/bind/CollectionTypeAdapterFactory.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/internal/functions/Functions.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BookList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPIClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="216">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Book_NY.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BuyLink_NY.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Isbn_NY.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/Result_NY.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/ResultsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/NYBooksAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/NYTimesResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/NYBooksAPIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -434,25 +606,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BookFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        <state relative-caret-position="136">
+          <caret line="190" column="68" selection-start-line="190" selection-start-column="68" selection-end-line="190" selection-end-column="68" />
           <folding>
+            <element signature="e#0#6442#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1741#1742#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#2121#2122#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
-            <element signature="e#2856#2857#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#5591#5592#0" expanded="true" />
+            <element signature="e#5645#5646#0" expanded="true" />
+            <element signature="e#5980#6118#0" expanded="true" />
+            <element signature="e#6117#6118#0" expanded="true" />
           </folding>
         </state>
       </provider>
