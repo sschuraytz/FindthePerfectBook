@@ -44,7 +44,7 @@ public class BookFrame extends JFrame {
     private List<Item> bookList;
 
     public BookFrame() throws IOException {
-        setTitle("Find the Perfect Book_NY");
+        setTitle("Find the Perfect Book");
         setSize(600, 600);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -173,7 +173,7 @@ public class BookFrame extends JFrame {
     private List<Result_Gut> bookList;
 
     public BookFrame() throws IOException {
-        setTitle("Find the Perfect Book_NY");
+        setTitle("Find the Perfect Book");
         setSize(600, 600);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -213,7 +213,7 @@ public class BookFrame extends JFrame {
 
                     bookList = gutendexResponse.getResults();
                     num = rand.nextInt(bookList.size());
-                   // loadBookBasicInfo();
+                    loadBookBasicInfo();
                 });
 
         loveIt.addActionListener(new ActionListener() {
@@ -246,13 +246,27 @@ public class BookFrame extends JFrame {
 
     public void loadBookDetailedInfo() {
         List<Author_Gut> authorList = bookList.get(num).getAuthors();
-
-        String titleString = bookList.get(num).getTitle();
         String authorString = authorList.get(0).getName();
 
-        String text = bookList.get(num).getFormats().getText_plain();
+        String text = "";
 
-       showBookDetails.setText(text);
+        if (bookList.get(num).getFormats().getText_plain() != null) {
+            text = bookList.get(num).getFormats().getText_plain();
+        }
+        else if (bookList.get(num).getFormats().getText_html() != null) {
+            text = bookList.get(num).getFormats().getText_html();
+        }
+        else if (bookList.get(num).getFormats().getText_plaincharset_us_ascii() != null) {
+            text = bookList.get(num).getFormats().getText_plaincharset_us_ascii();
+        }
+        else if (bookList.get(num).getFormats().getText_plaincharset_iso_8859() != null) {
+            text = bookList.get(num).getFormats().getText_plaincharset_iso_8859();
+        }
+        else {
+            text = "no text available";
+        }
+
+       showBookDetails.setText("<html> <p>" + authorString + " <p>" + text + "</p></html>");
     }
 
     public static void main(String[] args) throws IOException {

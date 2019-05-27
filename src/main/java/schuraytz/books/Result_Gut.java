@@ -16,7 +16,7 @@ public class Result_Gut {
     private String title;
     @SerializedName("authors")
     @Expose
-    private List<schuraytz.books.Author_Gut> authors = null;
+    private List<Author_Gut> authors = null;
     @SerializedName("subjects")
     @Expose
     private List<String> subjects = null;
