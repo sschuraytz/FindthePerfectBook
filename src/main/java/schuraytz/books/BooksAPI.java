@@ -9,5 +9,4 @@ public interface BooksAPI {
 
     @GET("/books/v1/volumes?")
     Observable<GoogleBooksResponse> items(@Query("q") String searchTerm);
-
 }

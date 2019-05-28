@@ -22,7 +22,9 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -36,13 +38,14 @@ public class BookFrameGutendex extends JFrame{
     private final JButton hateIt = new JButton("Try a different preview");
 
     private final JPanel searchPanel = new JPanel();
-    private final JTextField searchTerm_tf = new JTextField();
+    private JTextField searchTerm_tf = new JTextField();
     private final Image searchButtonImage = ImageIO.read(new URL("http://cdn.onlinewebfonts.com/svg/img_104938.png"));
     private final Image searchButtonImageScaled = searchButtonImage.getScaledInstance(10, 10, java.awt.Image.SCALE_SMOOTH);
     private final JButton searchButton = new JButton();
 
-    private final JLabel showBook = new JLabel();
-    private final JLabel showBookDetails = new JLabel();
+    private JLabel showBook = new JLabel("I'm here");
+    private JLabel showBookDetails = new JLabel();
+    private String fullText = "";
 
     private Random rand = new Random();
     private ArrayList<Integer> randomNumbers = new ArrayList<>();
@@ -83,18 +86,21 @@ public class BookFrameGutendex extends JFrame{
 
         showBook.setBackground(Color.cyan);
         showBook.setOpaque(true);
-        root.add(showBook, BorderLayout.CENTER);
+        root.add(showBook, BorderLayout.EAST);
 
 
         root.add(showBookDetails);
-
         setContentPane(root);
 
 
         loveIt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                loadBookDetailedInfo();
+                try {
+                    loadBookDetailedInfo();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 
@@ -146,7 +152,7 @@ public class BookFrameGutendex extends JFrame{
         showBook.setText(bookList.get(num).getTitle());
     }
 
-    public void loadBookDetailedInfo() {
+    public void loadBookDetailedInfo() throws IOException {
         List<Author_Gut> authorList = bookList.get(num).getAuthors();
         String authorString;
         if (authorList.size() > 0) {
@@ -156,7 +162,8 @@ public class BookFrameGutendex extends JFrame{
             authorString = "Author Unknown";
         }
 
-        String text;
+        //String text;
+        URL text = new URL("http://example.com/pages/");
 
         if (bookList.get(num).getFormats().getText_plain() != null) {
             text = bookList.get(num).getFormats().getText_plain();
@@ -166,11 +173,14 @@ public class BookFrameGutendex extends JFrame{
             text = bookList.get(num).getFormats().getText_plaincharset_us_ascii();
         } else if (bookList.get(num).getFormats().getText_plaincharset_iso_8859() != null) {
             text = bookList.get(num).getFormats().getText_plaincharset_iso_8859();
-        } else {
-            text = "no text available";
         }
 
-        showBookDetails.setText("<html> <p>" + authorString + " <p>" + text + "</p></html>");
+        readTextFromLink(text);
+
+       // showBookDetails.setText("<html> <p>" + authorString + " <p>" + text + "</p></html>");
+
+        showBookDetails.setText("<html><p>" + fullText + "</p> </html>");
+
     }
 
     public void APICall() {
@@ -204,6 +214,26 @@ public class BookFrameGutendex extends JFrame{
 
     public void randomizeList() {
         Collections.shuffle(randomNumbers);
+    }
+
+    public void readTextFromLink(URL text) throws IOException {
+        long skippingCounter = 180;
+        if (!text.toString().equals("http://example.com/pages/")) {
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(text.openStream()));
+
+            in.skip(skippingCounter);
+            String inputLine;
+            int count = 0;
+            while ((inputLine = in.readLine()) != null && count <= 250 ) {
+                fullText = fullText.concat("\n" + inputLine);
+                count++;
+            }
+
+            in.close();
+
+        }
+
     }
 
     public static void main(String[] args) throws IOException {

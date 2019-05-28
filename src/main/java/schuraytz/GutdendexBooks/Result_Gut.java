@@ -31,9 +31,6 @@ public class Result_Gut {
     @SerializedName("media_type")
     @Expose
     private String mediaType;
-/*    @SerializedName("formats")
-    @Expose
-    private Formats formats;*/
     @SerializedName("formats")
     @Expose
     private Formats formats;
@@ -112,15 +109,6 @@ public class Result_Gut {
     public void setFormats(Formats formats) {
         this.formats = formats;
     }
-/*
-    public Formats getFormats() {
-        return formats;
-    }
-
-    public void setFormats(Formats formats) {
-        this.formats = formats;
-    }
-*/
 
     public Integer getDownloadCount() {
         return downloadCount;
