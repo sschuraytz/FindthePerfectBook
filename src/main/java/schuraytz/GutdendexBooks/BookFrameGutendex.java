@@ -99,7 +99,8 @@ public class BookFrameGutendex extends JFrame{
         loveIt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (searchTerm_tf.getText().length() > 0) {
+                if (searchTerm_tf.getText().length() > 0 &&
+                searchTerm_tf.getText().matches("[A-Za-z]+")) {
                     try {
                         loadBookDetailedInfo();
                     } catch (IOException ex) {
@@ -115,7 +116,8 @@ public class BookFrameGutendex extends JFrame{
         hateIt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (searchTerm_tf.getText().length() > 0) {
+                if (searchTerm_tf.getText().length() > 0 &&
+                        searchTerm_tf.getText().matches("[A-Za-z]+")) {
                     num = rand.nextInt(bookList.size());
                     loadBookBasicInfo();
                     showBookDetails.setText("");
@@ -147,10 +149,12 @@ public class BookFrameGutendex extends JFrame{
         searchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (searchTerm_tf.getText().length() > 0) {
+                if (searchTerm_tf.getText().length() > 0 &&
+                        searchTerm_tf.getText().matches("[A-Za-z]+")) {
                     searchTermClass.setSearchTerm(searchTerm_tf.getText());
                     APICall();
                     loadBookBasicInfo();
+                    showBookDetails.setText("");
                 } else {
                     getMissingInputMessage();
                 }
@@ -225,7 +229,7 @@ public class BookFrameGutendex extends JFrame{
     }
 
     public void readTextFromLink(URL text) throws IOException {
-        long skippingCounter = 180;
+        long skippingCounter = 300;
         if (!text.toString().equals("http://example.com/pages/")) {
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(text.openStream()));
@@ -233,7 +237,7 @@ public class BookFrameGutendex extends JFrame{
             in.skip(skippingCounter);
             String inputLine;
             int count = 0;
-            while ((inputLine = in.readLine()) != null && count <= 250 ) {
+            while ((inputLine = in.readLine()) != null && count <= 320 ) {
                 fullText = fullText.concat("\n" + inputLine);
                 count++;
             }
@@ -242,8 +246,8 @@ public class BookFrameGutendex extends JFrame{
     }
 
     public void getMissingInputMessage() {
-        JOptionPane.showMessageDialog(rootPane, "You must enter a topic or genre in the search box" +
-                " to begin your search.");
+        JOptionPane.showMessageDialog(rootPane, "You must enter a single word topic or genre " +
+                "in the search box to begin your search.");
     }
 
     public static void main(String[] args) throws IOException {
