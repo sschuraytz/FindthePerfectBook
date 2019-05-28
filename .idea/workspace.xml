@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41dbbe23-df84-45da-ac34-6deb365dce04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/URLReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/Formats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/Formats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/Result_Gut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/Result_Gut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/magnifyingGlass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/magnifyingGlass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/Formats.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/Formats.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/Result_Gut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/Result_Gut.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,31 +17,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="233" lean-forward="true" selection-start-line="233" selection-end-line="233" />
+            <state relative-caret-position="224">
+              <caret line="127" column="45" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5071#5072#0" expanded="true" />
+                <element signature="e#5696#5697#0" expanded="true" />
                 <element signature="e#6895#7033#0" expanded="true" />
                 <element signature="e#7032#7033#0" expanded="true" />
-                <element signature="e#7278#7279#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/Formats.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#8034#8035#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,7 +60,6 @@
       <find>bookList</find>
       <find>controls</find>
       <find>item</find>
-      <find>showBook</find>
       <find>searchButton</find>
       <find>re</find>
       <find>String</find>
@@ -98,6 +68,8 @@
       <find>ra</find>
       <find>bookLi</find>
       <find>loveIt</find>
+      <find>showBook</find>
+      <find>JOP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,9 +145,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="916" />
-    <option name="width" value="1002" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="54" />
+    <option name="width" value="873" />
     <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -332,10 +304,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="611" y="0" width="668" height="687" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39144737" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19271255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -344,7 +316,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.11891892" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30373" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46003553" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -626,20 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="233" lean-forward="true" selection-start-line="233" selection-end-line="233" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5071#5072#0" expanded="true" />
-            <element signature="e#6895#7033#0" expanded="true" />
-            <element signature="e#7032#7033#0" expanded="true" />
-            <element signature="e#7278#7279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/URLReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -658,6 +616,20 @@
             <element signature="imports" expanded="true" />
             <element signature="e#737#738#0" expanded="true" />
             <element signature="e#769#770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="127" column="45" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5696#5697#0" expanded="true" />
+            <element signature="e#6895#7033#0" expanded="true" />
+            <element signature="e#7032#7033#0" expanded="true" />
+            <element signature="e#8034#8035#0" expanded="true" />
           </folding>
         </state>
       </provider>

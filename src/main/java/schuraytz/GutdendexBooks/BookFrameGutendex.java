@@ -4,16 +4,20 @@ import io.reactivex.disposables.Disposable;
 
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -43,9 +47,11 @@ public class BookFrameGutendex extends JFrame{
     private final Image searchButtonImageScaled = searchButtonImage.getScaledInstance(10, 10, java.awt.Image.SCALE_SMOOTH);
     private final JButton searchButton = new JButton();
 
-    private JLabel showBook = new JLabel("I'm here");
+    private JPanel bookInfo = new JPanel();
+    private JLabel showBook = new JLabel();
     private JLabel showBookDetails = new JLabel();
     private String fullText = "";
+    private JScrollPane textScroller;
 
     private Random rand = new Random();
     private ArrayList<Integer> randomNumbers = new ArrayList<>();
@@ -84,22 +90,29 @@ public class BookFrameGutendex extends JFrame{
         searchPanel.setBackground(Color.BLACK);
         root.add(searchPanel, BorderLayout.NORTH);
 
-        showBook.setBackground(Color.cyan);
-        showBook.setOpaque(true);
-        root.add(showBook, BorderLayout.EAST);
+        bookInfo.setLayout(new BoxLayout(bookInfo, BoxLayout.PAGE_AXIS));
+        bookInfo.setPreferredSize(new Dimension(100, 100));
+        bookInfo.add(showBook);
+        bookInfo.setFont(new Font("Sans Serif", Font.BOLD, 14));
+        bookInfo.add(showBookDetails);
+        root.add(bookInfo, BorderLayout.CENTER);
 
-
-        root.add(showBookDetails);
+       // root.add(textScroller, BorderLayout.CENTER);
         setContentPane(root);
 
 
         loveIt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try {
-                    loadBookDetailedInfo();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
+                if (searchTerm_tf.getText().length() > 0) {
+                    try {
+                        loadBookDetailedInfo();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                else {
+                    getMissingInputMessage();
                 }
             }
         });
@@ -107,9 +120,13 @@ public class BookFrameGutendex extends JFrame{
         hateIt.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                num = rand.nextInt(bookList.size());
-                loadBookBasicInfo();
-                showBookDetails.setText("");
+                if (searchTerm_tf.getText().length() > 0) {
+                    num = rand.nextInt(bookList.size());
+                    loadBookBasicInfo();
+                    showBookDetails.setText("");
+                } else {
+                    getMissingInputMessage();
+                }
             }
         });
 
@@ -140,8 +157,7 @@ public class BookFrameGutendex extends JFrame{
                     APICall();
                     loadBookBasicInfo();
                 } else {
-                    JOptionPane.showMessageDialog(root, "You must enter a topic or genre in the search box" +
-                            " to begin your search.");
+                    getMissingInputMessage();
                 }
             }
         });
@@ -180,6 +196,9 @@ public class BookFrameGutendex extends JFrame{
        // showBookDetails.setText("<html> <p>" + authorString + " <p>" + text + "</p></html>");
 
         showBookDetails.setText("<html><p>" + fullText + "</p> </html>");
+        showBookDetails.setPreferredSize(new Dimension(100,100));
+       // rootPane.add(getTextScroller(), BorderLayout.CENTER);
+
 
     }
 
@@ -229,11 +248,20 @@ public class BookFrameGutendex extends JFrame{
                 fullText = fullText.concat("\n" + inputLine);
                 count++;
             }
-
             in.close();
-
         }
+    }
 
+    public void getMissingInputMessage() {
+        JOptionPane.showMessageDialog(rootPane, "You must enter a topic or genre in the search box" +
+                " to begin your search.");
+    }
+
+    public JScrollPane getTextScroller() {
+
+        textScroller = new JScrollPane(showBookDetails);
+       // JOptionPane.showMessageDialog(null, textScroller);
+        return textScroller;
     }
 
     public static void main(String[] args) throws IOException {
