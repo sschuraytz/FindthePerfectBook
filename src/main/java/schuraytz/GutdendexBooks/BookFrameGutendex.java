@@ -21,6 +21,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -40,8 +41,12 @@ public class BookFrameGutendex extends JFrame{
     private final JLabel showBook = new JLabel();
     private final JLabel showBookDetails = new JLabel();
     Random rand = new Random();
+    private ArrayList<Integer> randomNumbers = new ArrayList<>();
+    private int index = 0;
     private int num;
     private List<Result_Gut> bookList;
+    //private int[] randomNumbers = new int[bookList.size() - 1];
+
 
     public BookFrameGutendex() throws IOException {
         setTitle("Find the Perfect Book");
@@ -76,6 +81,7 @@ public class BookFrameGutendex extends JFrame{
 
         setContentPane(root);
 
+        //APICall();
 
         GutendexAPIClient client = new GutendexAPIClient();
         Disposable disposable = client.getBookList()
@@ -84,8 +90,10 @@ public class BookFrameGutendex extends JFrame{
 
                     bookList = gutendexResponse.getResults();
                     num = rand.nextInt(bookList.size());
-                    loadBookBasicInfo();
+                   // loadBookBasicInfo();
                 });
+        createOrderedIntList();
+        randomizeList();
 
         loveIt.addActionListener(new ActionListener() {
             @Override
@@ -103,6 +111,24 @@ public class BookFrameGutendex extends JFrame{
             }
         });
 
+        searchTerm_tf.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SearchTermClass searchClass = new SearchTermClass();
+                searchClass.searchTerm = searchTerm_tf.getText();
+                loadBookBasicInfo();
+            }
+        });
+
+        searchButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SearchTermClass searchClass = new SearchTermClass();
+                searchClass.searchTerm = searchTerm_tf.getText();
+                APICall();
+                loadBookBasicInfo();
+            }
+        });
 
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
@@ -112,14 +138,20 @@ public class BookFrameGutendex extends JFrame{
     }
 
     public void loadBookBasicInfo() {
-        showBook.setText(bookList.get(num).getTitle());
+        loveIt.setText(bookList.get(num).getTitle());
     }
 
     public void loadBookDetailedInfo() {
         List<Author_Gut> authorList = bookList.get(num).getAuthors();
-        String authorString = authorList.get(0).getName();
+        String authorString;
+        if (authorList.size() > 0) {
+            authorString = authorList.get(0).getName();
+        }
+        else {
+            authorString = "Author Unknown";
+        }
 
-        String text = "";
+        String text;
 
         if (bookList.get(num).getFormats().getText_plain() != null) {
             text = bookList.get(num).getFormats().getText_plain();
@@ -136,6 +168,42 @@ public class BookFrameGutendex extends JFrame{
         showBookDetails.setText("<html> <p>" + authorString + " <p>" + text + "</p></html>");
     }
 
+    public void APICall() {
+        GutendexAPIClient client = new GutendexAPIClient();
+        Disposable disposable = client.getBookList()
+                .subscribe(books -> {
+                    gutendexResponse = books;
+
+                    bookList = gutendexResponse.getResults();
+                    num = randomNumbers.get(index);
+                    index++;
+                    loadBookBasicInfo();
+                });
+
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                disposable.dispose();
+            }
+        });
+    }
+
+    public void createOrderedIntList() {
+        for (int i = 0; i < bookList.size(); i++)
+        {
+            randomNumbers.add(i);
+        }
+    }
+
+    public void randomizeList() {
+        for (int i = 0; i < bookList.size() - 1; i++) {
+            int j = rand.nextInt(bookList.size() - 1);
+            if (j != i) {
+                int temp = randomNumbers.get(i);
+                randomNumbers.set(i, randomNumbers.get(j));
+                randomNumbers.set(j, temp);
+            }
+        }
+    }
     public static void main(String[] args) throws IOException {
         new BookFrameGutendex().setVisible(true);
     }

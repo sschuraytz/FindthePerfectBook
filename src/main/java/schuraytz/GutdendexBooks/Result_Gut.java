@@ -4,7 +4,6 @@ package schuraytz.GutdendexBooks;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import schuraytz.books.Formats;
 
 public class Result_Gut {
 
