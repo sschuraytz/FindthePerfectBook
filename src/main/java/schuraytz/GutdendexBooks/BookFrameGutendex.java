@@ -17,6 +17,8 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
@@ -39,6 +41,7 @@ public class BookFrameGutendex extends JFrame{
     private final Image searchButtonImage = ImageIO.read(new URL("http://cdn.onlinewebfonts.com/svg/img_104938.png"));
     private final Image searchButtonImageScaled = searchButtonImage.getScaledInstance(10, 10, java.awt.Image.SCALE_SMOOTH);
     private final JButton searchButton = new JButton();
+    private final JLabel instructions = new JLabel("Enter ");
 
     private final JLabel showBook = new JLabel();
     private final JLabel showBookDetails = new JLabel();
@@ -61,6 +64,8 @@ public class BookFrameGutendex extends JFrame{
         JPanel root = new JPanel();
         root.setLayout(new BorderLayout());
 
+        loveIt.setBackground(Color.GREEN.brighter());
+        hateIt.setBackground(Color.RED.brighter());
         controls.add(loveIt);
         controls.add(hateIt);
         root.add(controls, BorderLayout.SOUTH);
@@ -71,6 +76,7 @@ public class BookFrameGutendex extends JFrame{
         searchTerm_tf.setFont(font1);
         searchTerm_tf.setBorder(BorderFactory.createLineBorder(Color.GRAY, 1));
         searchButton.setIcon(new ImageIcon(searchButtonImageScaled));
+        searchButton.setToolTipText("Press this button to start your book search.");
 
         searchPanel.add(searchTerm_tf);
         searchPanel.add(searchButton);
@@ -146,6 +152,24 @@ public class BookFrameGutendex extends JFrame{
                 loadBookBasicInfo();
             }
         });
+
+/*
+        searchTerm_tf.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                if (searchTerm_tf.getText().equals("enter a topic here")) {
+                    searchTerm_tf.setText("");
+                }
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (searchTerm_tf.getText().equals("")) {
+                    searchTerm_tf.setText("enter text here");
+                }
+            }
+        });
+*/
 
     }
 

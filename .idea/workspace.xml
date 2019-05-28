@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41dbbe23-df84-45da-ac34-6deb365dce04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/GutendexAPIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/GutendexAPIClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/SearchTermClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/SearchTermClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BookFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-750">
-              <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+              <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3698#3699#0" expanded="true" />
@@ -37,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/GutendexAPIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="263">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+            <state relative-caret-position="51">
+              <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3697#3698#0" expanded="true" />
@@ -134,6 +139,7 @@
       <find>rand</find>
       <find>ra</find>
       <find>bookLi</find>
+      <find>loveIt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BookFrame.java" />
         <option value="$PROJECT_DIR$/src/BooksAPIClient.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/BooksAPI.java" />
@@ -192,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/searchTermClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/SearchTermClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/GutendexAPIClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/HintTextField.java" />
         <option value="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" />
       </list>
     </option>
@@ -210,8 +216,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
+    <option name="x" value="916" />
+    <option name="y" value="148" />
     <option name="width" value="1002" />
     <option name="height" value="1031" />
   </component>
@@ -379,7 +385,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15708502" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19271255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -388,7 +394,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1705151" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1616341" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46003553" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -408,13 +414,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.desktop/java/awt/event/WindowAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
@@ -616,21 +615,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BookFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-750">
-          <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3698#3699#0" expanded="true" />
             <element signature="e#3776#3777#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -662,10 +651,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/HintTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/GutendexAPIClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="263">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/BooksAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -674,8 +695,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+        <state relative-caret-position="51">
+          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3697#3698#0" expanded="true" />
