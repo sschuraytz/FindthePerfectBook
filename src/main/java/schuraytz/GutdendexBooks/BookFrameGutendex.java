@@ -8,6 +8,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
@@ -17,8 +18,6 @@ import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
@@ -33,15 +32,14 @@ import java.util.Random;
 public class BookFrameGutendex extends JFrame{
 
     private final JPanel controls = new JPanel();
-    private final JButton loveIt = new JButton("Tell me about the book");
-    private final JButton hateIt = new JButton("Show me another preview");
+    private final JButton loveIt = new JButton("See more about the book");
+    private final JButton hateIt = new JButton("Try a different preview");
 
     private final JPanel searchPanel = new JPanel();
     private final JTextField searchTerm_tf = new JTextField();
     private final Image searchButtonImage = ImageIO.read(new URL("http://cdn.onlinewebfonts.com/svg/img_104938.png"));
     private final Image searchButtonImageScaled = searchButtonImage.getScaledInstance(10, 10, java.awt.Image.SCALE_SMOOTH);
     private final JButton searchButton = new JButton();
-    private final JLabel instructions = new JLabel("Enter ");
 
     private final JLabel showBook = new JLabel();
     private final JLabel showBookDetails = new JLabel();
@@ -92,22 +90,6 @@ public class BookFrameGutendex extends JFrame{
 
         setContentPane(root);
 
-        //APICall();
-
-        /*GutendexAPIClient client = new GutendexAPIClient(searchTermClass);
-        Disposable disposable = client.getBookList()
-                .subscribe(books -> {
-                    gutendexResponse = books;
-
-                    bookList = gutendexResponse.getResults();
-                    num = rand.nextInt(bookList.size());
-                   // loadBookBasicInfo();
-                });*/
-
-
-        /*for (Result_Gut i : bookList) {
-            System.out.println(i.getTitle());
-        }*/
 
         loveIt.addActionListener(new ActionListener() {
             @Override
@@ -147,29 +129,16 @@ public class BookFrameGutendex extends JFrame{
         searchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                searchTermClass.setSearchTerm(searchTerm_tf.getText());
-                APICall();
-                loadBookBasicInfo();
-            }
-        });
-
-/*
-        searchTerm_tf.addFocusListener(new FocusListener() {
-            @Override
-            public void focusGained(FocusEvent e) {
-                if (searchTerm_tf.getText().equals("enter a topic here")) {
-                    searchTerm_tf.setText("");
-                }
-            }
-
-            @Override
-            public void focusLost(FocusEvent e) {
-                if (searchTerm_tf.getText().equals("")) {
-                    searchTerm_tf.setText("enter text here");
+                if (searchTerm_tf.getText().length() > 0) {
+                    searchTermClass.setSearchTerm(searchTerm_tf.getText());
+                    APICall();
+                    loadBookBasicInfo();
+                } else {
+                    JOptionPane.showMessageDialog(root, "You must enter a topic or genre in the search box" +
+                            " to begin your search.");
                 }
             }
         });
-*/
 
     }
 
