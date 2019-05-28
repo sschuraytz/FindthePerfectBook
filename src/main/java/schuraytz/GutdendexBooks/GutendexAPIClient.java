@@ -8,9 +8,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class GutendexAPIClient {
 
     private final GutendexAPI api;
-    SearchTermClass searchClass = new SearchTermClass();
+    SearchTermClass searchClass;
 
-    public GutendexAPIClient() {
+    public GutendexAPIClient(SearchTermClass stc) {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://gutendex.com")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -18,7 +18,8 @@ public class GutendexAPIClient {
                 .build();
 
         api = retrofit.create(GutendexAPI.class);
+        searchClass = stc;
     }
 
-    Observable<GutendexResponse> getBookList() { return api.getBookList(searchClass.searchTerm); }
+    Observable<GutendexResponse> getBookList() { return api.getBookList(searchClass.getSearchTerm()); }
 }
