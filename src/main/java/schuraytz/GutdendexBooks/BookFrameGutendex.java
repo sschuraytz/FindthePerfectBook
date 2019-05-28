@@ -12,7 +12,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
@@ -51,7 +50,6 @@ public class BookFrameGutendex extends JFrame{
     private JLabel showBook = new JLabel();
     private JLabel showBookDetails = new JLabel();
     private String fullText = "";
-    private JScrollPane textScroller;
 
     private Random rand = new Random();
     private ArrayList<Integer> randomNumbers = new ArrayList<>();
@@ -91,15 +89,12 @@ public class BookFrameGutendex extends JFrame{
         root.add(searchPanel, BorderLayout.NORTH);
 
         bookInfo.setLayout(new BoxLayout(bookInfo, BoxLayout.PAGE_AXIS));
-        bookInfo.setPreferredSize(new Dimension(100, 100));
         bookInfo.add(showBook);
         bookInfo.setFont(new Font("Sans Serif", Font.BOLD, 14));
         bookInfo.add(showBookDetails);
         root.add(bookInfo, BorderLayout.CENTER);
 
-       // root.add(textScroller, BorderLayout.CENTER);
         setContentPane(root);
-
 
         loveIt.addActionListener(new ActionListener() {
             @Override
@@ -169,7 +164,7 @@ public class BookFrameGutendex extends JFrame{
     }
 
     public void loadBookDetailedInfo() throws IOException {
-        List<Author_Gut> authorList = bookList.get(num).getAuthors();
+       /* List<Author_Gut> authorList = bookList.get(num).getAuthors();
         String authorString;
         if (authorList.size() > 0) {
             authorString = authorList.get(0).getName();
@@ -177,8 +172,8 @@ public class BookFrameGutendex extends JFrame{
         else {
             authorString = "Author Unknown";
         }
+        // showBookDetails.setText("<html> <p>" + authorString + " <p>" + text + "</p></html>");*/
 
-        //String text;
         URL text = new URL("http://example.com/pages/");
 
         if (bookList.get(num).getFormats().getText_plain() != null) {
@@ -192,14 +187,8 @@ public class BookFrameGutendex extends JFrame{
         }
 
         readTextFromLink(text);
-
-       // showBookDetails.setText("<html> <p>" + authorString + " <p>" + text + "</p></html>");
-
         showBookDetails.setText("<html><p>" + fullText + "</p> </html>");
         showBookDetails.setPreferredSize(new Dimension(100,100));
-       // rootPane.add(getTextScroller(), BorderLayout.CENTER);
-
-
     }
 
     public void APICall() {
@@ -255,13 +244,6 @@ public class BookFrameGutendex extends JFrame{
     public void getMissingInputMessage() {
         JOptionPane.showMessageDialog(rootPane, "You must enter a topic or genre in the search box" +
                 " to begin your search.");
-    }
-
-    public JScrollPane getTextScroller() {
-
-        textScroller = new JScrollPane(showBookDetails);
-       // JOptionPane.showMessageDialog(null, textScroller);
-        return textScroller;
     }
 
     public static void main(String[] args) throws IOException {

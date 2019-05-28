@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41dbbe23-df84-45da-ac34-6deb365dce04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,14 +21,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="127" column="45" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
+            <state relative-caret-position="261">
+              <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5696#5697#0" expanded="true" />
+                <element signature="e#5511#5512#0" expanded="true" />
                 <element signature="e#6895#7033#0" expanded="true" />
                 <element signature="e#7032#7033#0" expanded="true" />
-                <element signature="e#8034#8035#0" expanded="true" />
+                <element signature="e#7763#7764#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,6 +71,9 @@
       <find>loveIt</find>
       <find>showBook</find>
       <find>JOP</find>
+      <find>100</find>
+      <find>scroll</find>
+      <find>dimension</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -316,7 +320,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30373" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30373" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46003553" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -622,14 +626,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="127" column="45" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
+        <state relative-caret-position="261">
+          <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5696#5697#0" expanded="true" />
+            <element signature="e#5511#5512#0" expanded="true" />
             <element signature="e#6895#7033#0" expanded="true" />
             <element signature="e#7032#7033#0" expanded="true" />
-            <element signature="e#8034#8035#0" expanded="true" />
+            <element signature="e#7763#7764#0" expanded="true" />
           </folding>
         </state>
       </provider>
