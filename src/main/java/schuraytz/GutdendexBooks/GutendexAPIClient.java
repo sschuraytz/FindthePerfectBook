@@ -1,4 +1,4 @@
-package schuraytz.books;
+package schuraytz.GutdendexBooks;
 
 import io.reactivex.Observable;
 import retrofit2.Retrofit;

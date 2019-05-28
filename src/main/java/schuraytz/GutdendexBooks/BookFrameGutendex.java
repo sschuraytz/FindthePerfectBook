@@ -1,5 +1,4 @@
-
-package schuraytz.books;
+package schuraytz.GutdendexBooks;
 
 import io.reactivex.disposables.Disposable;
 
@@ -25,12 +24,13 @@ import java.net.URL;
 import java.util.List;
 import java.util.Random;
 
-public class BookFrame extends JFrame {
+public class BookFrameGutendex extends JFrame{
+
     private final JPanel searchPanel = new JPanel();
     private final JPanel controls = new JPanel();
     private final JButton loveIt = new JButton("Tell me about the book");
     private final JButton hateIt = new JButton("Show me another preview");
-    private GoogleBooksResponse gutendexResponse;
+    private GutendexResponse gutendexResponse;
 
     private final JTextField searchTerm_tf = new JTextField();
     private final Image searchButtonImage = ImageIO.read(new URL("http://cdn.onlinewebfonts.com/svg/img_104938.png"));
@@ -41,9 +41,9 @@ public class BookFrame extends JFrame {
     private final JLabel showBookDetails = new JLabel();
     Random rand = new Random();
     private int num;
-    private List<Item> bookList;
+    private List<Result_Gut> bookList;
 
-    public BookFrame() throws IOException {
+    public BookFrameGutendex() throws IOException {
         setTitle("Find the Perfect Book");
         setSize(600, 600);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -77,12 +77,12 @@ public class BookFrame extends JFrame {
         setContentPane(root);
 
 
-        BooksAPIClient client = new BooksAPIClient();
+        GutendexAPIClient client = new GutendexAPIClient();
         Disposable disposable = client.getBookList()
                 .subscribe(books -> {
                     gutendexResponse = books;
 
-                    bookList = gutendexResponse.getItems();
+                    bookList = gutendexResponse.getResults();
                     num = rand.nextInt(bookList.size());
                     loadBookBasicInfo();
                 });
@@ -112,17 +112,32 @@ public class BookFrame extends JFrame {
     }
 
     public void loadBookBasicInfo() {
-        showBook.setText(bookList.get(num).getVolumeInfo().getTitle());
+        showBook.setText(bookList.get(num).getTitle());
     }
 
     public void loadBookDetailedInfo() {
-        showBookDetails.setText("<html> <p>"+bookList.get(num).getVolumeInfo().getDescription()+"</p></html>");
+        List<Author_Gut> authorList = bookList.get(num).getAuthors();
+        String authorString = authorList.get(0).getName();
+
+        String text = "";
+
+        if (bookList.get(num).getFormats().getText_plain() != null) {
+            text = bookList.get(num).getFormats().getText_plain();
+        } else if (bookList.get(num).getFormats().getText_html() != null) {
+            text = bookList.get(num).getFormats().getText_html();
+        } else if (bookList.get(num).getFormats().getText_plaincharset_us_ascii() != null) {
+            text = bookList.get(num).getFormats().getText_plaincharset_us_ascii();
+        } else if (bookList.get(num).getFormats().getText_plaincharset_iso_8859() != null) {
+            text = bookList.get(num).getFormats().getText_plaincharset_iso_8859();
+        } else {
+            text = "no text available";
+        }
+
+        showBookDetails.setText("<html> <p>" + authorString + " <p>" + text + "</p></html>");
     }
 
     public static void main(String[] args) throws IOException {
-        new BookFrame().setVisible(true);
+        new BookFrameGutendex().setVisible(true);
     }
 
 }
-
-
