@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41dbbe23-df84-45da-ac34-6deb365dce04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" afterDir="false" />
-=======
->>>>>>> 83df753d375a8b437a4c8749dd9345a45b77e584
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,22 +24,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state relative-caret-position="123">
               <caret line="182" column="37" selection-start-line="182" selection-start-column="37" selection-end-line="182" selection-end-column="37" />
-=======
-            <state relative-caret-position="127">
-              <caret line="266" column="4" selection-start-line="266" selection-start-column="4" selection-end-line="266" selection-end-column="4" />
->>>>>>> 83df753d375a8b437a4c8749dd9345a45b77e584
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7554#7692#0" expanded="true" />
                 <element signature="e#7691#7692#0" expanded="true" />
-<<<<<<< HEAD
                 <element signature="e#7842#7843#0" expanded="true" />
-=======
-                <element signature="e#7979#7980#0" expanded="true" />
->>>>>>> 83df753d375a8b437a4c8749dd9345a45b77e584
               </folding>
             </state>
           </provider>
@@ -680,22 +669,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="123">
           <caret line="182" column="37" selection-start-line="182" selection-start-column="37" selection-end-line="182" selection-end-column="37" />
-=======
-        <state relative-caret-position="127">
-          <caret line="266" column="4" selection-start-line="266" selection-start-column="4" selection-end-line="266" selection-end-column="4" />
->>>>>>> 83df753d375a8b437a4c8749dd9345a45b77e584
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7554#7692#0" expanded="true" />
             <element signature="e#7691#7692#0" expanded="true" />
-<<<<<<< HEAD
             <element signature="e#7842#7843#0" expanded="true" />
-=======
-            <element signature="e#7979#7980#0" expanded="true" />
->>>>>>> 83df753d375a8b437a4c8749dd9345a45b77e584
           </folding>
         </state>
       </provider>
