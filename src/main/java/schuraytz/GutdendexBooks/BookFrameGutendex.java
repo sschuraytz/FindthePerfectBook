@@ -11,7 +11,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -147,7 +146,7 @@ public class BookFrameGutendex extends JFrame{
         searchButton.addActionListener(e -> {
             if (searchTerm_tf.getText().length() > 0 &&
                     searchTerm_tf.getText().matches("[A-Za-z]+")) {
-                    APICall();
+                    getBookDataFromGutendexAPI();
             } else {
                 getMissingInputMessage();
             }
@@ -205,7 +204,7 @@ public class BookFrameGutendex extends JFrame{
                 + " \nShelves that have this book: " + shelves.toString().substring(1, shelves.toString().length()-1));
     }
 
-    public void APICall() {
+    public void getBookDataFromGutendexAPI() {
         GutendexAPIClient client = new GutendexAPIClient();
         Disposable disposable = client.getBookList(searchTerm_tf.getText())
                 .subscribeOn(Schedulers.io())
