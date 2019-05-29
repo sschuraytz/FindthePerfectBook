@@ -1,26 +1,24 @@
 package schuraytz.GutdendexBooks;
 
 import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
-import javax.swing.Box;
-import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
@@ -32,7 +30,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
+
 
 public class BookFrameGutendex extends JFrame{
 
@@ -48,17 +46,17 @@ public class BookFrameGutendex extends JFrame{
 
     private JPanel bookInfo = new JPanel();
     private JLabel showBook = new JLabel();
-    private JLabel showBookDetails = new JLabel();
+    private JTextArea showBookDetails = new JTextArea();
     private String fullText = "";
 
-    private Random rand = new Random();
     private ArrayList<Integer> randomNumbers = new ArrayList<>();
     private int index = 0;
     private int num;
 
     private GutendexResponse gutendexResponse;
     private List<Result_Gut> bookList;
-    public SearchTermClass searchTermClass = new SearchTermClass();
+
+    private JScrollPane listScroller;
 
 
     public BookFrameGutendex() throws IOException {
@@ -88,43 +86,44 @@ public class BookFrameGutendex extends JFrame{
         searchPanel.setBackground(Color.BLACK);
         root.add(searchPanel, BorderLayout.NORTH);
 
-        bookInfo.setLayout(new BoxLayout(bookInfo, BoxLayout.PAGE_AXIS));
-        bookInfo.add(showBook);
-        bookInfo.setFont(new Font("Sans Serif", Font.BOLD, 14));
-        bookInfo.add(showBookDetails);
-        root.add(bookInfo, BorderLayout.CENTER);
+        bookInfo.setLayout(new BorderLayout());
+        bookInfo.add(showBook, BorderLayout.NORTH);
+            // this isn't modifying the font
+            // bookInfo.setFont(new Font("Times New Roman", Font.BOLD, 25));
 
+       // listScroller.setHorizontalScrollBar(null);
+
+        showBookDetails.setEditable(false);
+        bookInfo.add(listScrollerSetUp(), BorderLayout.CENTER);
+        root.add(bookInfo, BorderLayout.CENTER);
         setContentPane(root);
 
-        loveIt.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (searchTerm_tf.getText().length() > 0 &&
-                searchTerm_tf.getText().matches("[A-Za-z]+")) {
-                    try {
-                        loadBookDetailedInfo();
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                }
-                else {
-                    getMissingInputMessage();
-                }
+        loveIt.addActionListener(e -> {
+            if (searchTerm_tf.getText().length() > 0 &&
+            searchTerm_tf.getText().matches("[A-Za-z]+")) {
+                    loadBookDetailedInfo();
+            }
+            else {
+                getMissingInputMessage();
             }
         });
 
-        hateIt.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (searchTerm_tf.getText().length() > 0 &&
-                        searchTerm_tf.getText().matches("[A-Za-z]+")) {
-                    num = rand.nextInt(bookList.size());
+        hateIt.addActionListener(e -> {
+            if (searchTerm_tf.getText().length() > 0 &&
+                    searchTerm_tf.getText().matches("[A-Za-z]+")) {
+                    num = randomNumbers.get(index);
+                    index++;
+                try {
                     loadBookBasicInfo();
-                    showBookDetails.setText("");
-                } else {
-                    getMissingInputMessage();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
+
+            } else {
+                showBookDetails.setText("");
+                getMissingInputMessage();
             }
+
         });
 
         //allow user to just press enter w/o buttons
@@ -132,43 +131,55 @@ public class BookFrameGutendex extends JFrame{
             @Override
             public void keyTyped(KeyEvent e) {
             }
-
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
                     searchButton.doClick();
                 }
             }
-
             @Override
             public void keyReleased(KeyEvent e) {
             }
         });
 
-
-        searchButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (searchTerm_tf.getText().length() > 0 &&
-                        searchTerm_tf.getText().matches("[A-Za-z]+")) {
-                    searchTermClass.setSearchTerm(searchTerm_tf.getText());
+        searchButton.addActionListener(e -> {
+            if (searchTerm_tf.getText().length() > 0 &&
+                    searchTerm_tf.getText().matches("[A-Za-z]+")) {
                     APICall();
-                    loadBookBasicInfo();
-                    showBookDetails.setText("");
-                } else {
-                    getMissingInputMessage();
-                }
+            } else {
+                getMissingInputMessage();
             }
         });
+    }
+
+    public void loadBookBasicInfo() throws IOException {
+        Result_Gut result_gut = bookList.get(num);
+        showBook.setText(result_gut.getTitle());
+
+        URL text;
+
+        Formats formats = result_gut.getFormats();
+        /*if (formats.getText_plain() != null) {
+            text = formats.getText_plain();
+        } else*/
+        if (formats.getText_html() != null) {
+            text = formats.getText_html();
+        } else if (formats.getText_plaincharset_us_ascii() != null) {
+            text = formats.getText_plaincharset_us_ascii();
+        } else if (formats.getText_plaincharset_iso_8859() != null) {
+            text = formats.getText_plaincharset_iso_8859();
+        } else {
+            return;
+        }
+
+        readTextFromLink(text);
+        showBookDetails.setText(fullText);
+
 
     }
 
-    public void loadBookBasicInfo() {
-        showBook.setText(bookList.get(num).getTitle());
-    }
-
-    public void loadBookDetailedInfo() throws IOException {
-       /* List<Author_Gut> authorList = bookList.get(num).getAuthors();
+    public void loadBookDetailedInfo(){
+        List<Author_Gut> authorList = bookList.get(num).getAuthors();
         String authorString;
         if (authorList.size() > 0) {
             authorString = authorList.get(0).getName();
@@ -176,28 +187,19 @@ public class BookFrameGutendex extends JFrame{
         else {
             authorString = "Author Unknown";
         }
-        // showBookDetails.setText("<html> <p>" + authorString + " <p>" + text + "</p></html>");*/
 
-        URL text = new URL("http://example.com/pages/");
-
-        if (bookList.get(num).getFormats().getText_plain() != null) {
-            text = bookList.get(num).getFormats().getText_plain();
-        } else if (bookList.get(num).getFormats().getText_html() != null) {
-            text = bookList.get(num).getFormats().getText_html();
-        } else if (bookList.get(num).getFormats().getText_plaincharset_us_ascii() != null) {
-            text = bookList.get(num).getFormats().getText_plaincharset_us_ascii();
-        } else if (bookList.get(num).getFormats().getText_plaincharset_iso_8859() != null) {
-            text = bookList.get(num).getFormats().getText_plaincharset_iso_8859();
-        }
-
-        readTextFromLink(text);
-        showBookDetails.setText("<html><p>" + fullText + "</p> </html>");
-        showBookDetails.setPreferredSize(new Dimension(100,100));
+        List<String> subjects = bookList.get(num).getSubjects();
+        List<String> shelves = bookList.get(num).getBookshelves();
+        showBookDetails.setText("Authors: " + authorString
+                + " \nTopics discussed in the book: " + subjects.toString().substring(1, subjects.toString().length()-1)
+                + " \nShelves that have this book: " + shelves.toString().substring(1, shelves.toString().length()-1));
     }
 
     public void APICall() {
-        GutendexAPIClient client = new GutendexAPIClient(searchTermClass);
-        Disposable disposable = client.getBookList()
+        GutendexAPIClient client = new GutendexAPIClient();
+        Disposable disposable = client.getBookList(searchTerm_tf.getText())
+                .subscribeOn(Schedulers.io())
+                .observeOn(Schedulers.trampoline())
                 .subscribe(books -> {
                     gutendexResponse = books;
                     bookList = gutendexResponse.getResults();
@@ -228,26 +230,30 @@ public class BookFrameGutendex extends JFrame{
         Collections.shuffle(randomNumbers);
     }
 
-    public void readTextFromLink(URL text) throws IOException {
-        long skippingCounter = 300;
-        if (!text.toString().equals("http://example.com/pages/")) {
+    public void readTextFromLink(URL url) throws IOException {
             BufferedReader in = new BufferedReader(
-                    new InputStreamReader(text.openStream()));
+                    new InputStreamReader(url.openStream()));
 
-            in.skip(skippingCounter);
+            StringBuilder builder = new StringBuilder();
             String inputLine;
-            int count = 0;
-            while ((inputLine = in.readLine()) != null && count <= 320 ) {
-                fullText = fullText.concat("\n" + inputLine);
-                count++;
+            while ((inputLine = in.readLine()) != null) {
+                builder.append("\n");
+                builder.append(inputLine);
             }
+            fullText = builder.toString();
             in.close();
-        }
     }
 
     public void getMissingInputMessage() {
-        JOptionPane.showMessageDialog(rootPane, "You must enter a single word topic or genre " +
-                "in the search box to begin your search.");
+        JOptionPane.showMessageDialog(rootPane,
+                "You must enter a single word topic or genre " +
+                "in the search box to begin your search. \n" +
+                "If you did enter a word, it was not found in the system. Please try again.");
+    }
+
+    public JScrollPane listScrollerSetUp() {
+        listScroller = new JScrollPane(showBookDetails);
+        return listScroller;
     }
 
     public static void main(String[] args) throws IOException {
