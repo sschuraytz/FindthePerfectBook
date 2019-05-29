@@ -17,8 +17,6 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
@@ -155,14 +153,11 @@ public class BookFrameGutendex extends JFrame{
             }
         });
 
-<<<<<<< HEAD
-=======
-        textScroller.getViewport().addChangeListener(
+     /*   textScroller.getViewport().addChangeListener(
                 e -> {
                     JScrollBar sb = textScroller.getVerticalScrollBar();
                     sb.setValue(sb.getMinimum());
-                });
->>>>>>> 83df753d375a8b437a4c8749dd9345a45b77e584
+                });*/
     }
 
     public void loadBookBasicInfo() throws IOException {
@@ -187,12 +182,10 @@ public class BookFrameGutendex extends JFrame{
 
         readTextFromLink(text);
         showBookDetails.setText(fullText);
-<<<<<<< HEAD
+
         if (fullText == null) {
             showBookDetails.setText("");
         }
-=======
->>>>>>> 83df753d375a8b437a4c8749dd9345a45b77e584
     }
 
     public void loadBookDetailedInfo(){

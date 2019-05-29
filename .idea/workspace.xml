@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41dbbe23-df84-45da-ac34-6deb365dce04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,14 +20,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="182" column="37" selection-start-line="182" selection-start-column="37" selection-end-line="182" selection-end-column="37" />
+            <state relative-caret-position="126">
+              <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7554#7692#0" expanded="true" />
                 <element signature="e#7691#7692#0" expanded="true" />
-                <element signature="e#7842#7843#0" expanded="true" />
+                <element signature="e#7980#7981#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -75,7 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>JOP</find>
       <find>100</find>
       <find>dimension</find>
       <find>300</find>
@@ -105,6 +109,7 @@
       <find>searchTerm</find>
       <find>html</find>
       <find>loveIt</find>
+      <find>state</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -342,7 +347,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11659919" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22995952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -357,7 +362,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3291367" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3197158" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -371,9 +376,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/RetailPrice.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/ReadingModes.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -522,28 +524,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/HintTextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1347#1348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/HintTextField.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/GutendexAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -576,16 +557,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/URLReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="17" column="57" selection-start-line="16" selection-start-column="6" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/URLReader.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/Formats.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -642,17 +614,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/SearchTermClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/SearchTermClass.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -667,15 +629,22 @@
     <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/internal/observers/LambdaObserver.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="182" column="37" selection-start-line="182" selection-start-column="37" selection-end-line="182" selection-end-column="37" />
+        <state relative-caret-position="126">
+          <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7554#7692#0" expanded="true" />
             <element signature="e#7691#7692#0" expanded="true" />
-            <element signature="e#7842#7843#0" expanded="true" />
+            <element signature="e#7980#7981#0" expanded="true" />
           </folding>
         </state>
       </provider>
