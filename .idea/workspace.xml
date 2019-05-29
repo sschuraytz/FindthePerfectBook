@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41dbbe23-df84-45da-ac34-6deb365dce04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/GutendexAPIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/GutendexAPIClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/SearchTermClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/BookFrameGutendex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/GutendexAPIClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schuraytz/GutdendexBooks/GutendexAPIClient.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,13 +20,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="146" column="67" selection-start-line="146" selection-start-column="67" selection-end-line="146" selection-end-column="67" />
+            <state relative-caret-position="127">
+              <caret line="266" column="4" selection-start-line="266" selection-start-column="4" selection-end-line="266" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8224#8362#0" expanded="true" />
-                <element signature="e#8361#8362#0" expanded="true" />
-                <element signature="e#7765#7766#0" expanded="true" />
+                <element signature="e#7554#7692#0" expanded="true" />
+                <element signature="e#7691#7692#0" expanded="true" />
+                <element signature="e#7979#7980#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -348,7 +338,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11659919" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11659919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -357,7 +347,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25044405" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3445826" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22912966" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,28 +366,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java</url>
-          <line>242</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java</url>
-          <line>175</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/RetailPrice_.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/books/RetailPrice.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -625,9 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/internal/observers/LambdaObserver.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava2/2.2.0/adapter-rxjava2-2.2.0.jar!/retrofit2/adapter/rxjava2/BodyObservable.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -683,15 +649,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="627" column="12" selection-start-line="627" selection-start-column="12" selection-end-line="627" selection-end-column="12" />
+          <folding>
+            <element signature="e#25340#25341#0" expanded="true" />
+            <element signature="e#25379#25380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.8/rxjava-2.2.8.jar!/io/reactivex/internal/observers/LambdaObserver.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/schuraytz/GutdendexBooks/BookFrameGutendex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="146" column="67" selection-start-line="146" selection-start-column="67" selection-end-line="146" selection-end-column="67" />
+        <state relative-caret-position="127">
+          <caret line="266" column="4" selection-start-line="266" selection-start-column="4" selection-end-line="266" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8224#8362#0" expanded="true" />
-            <element signature="e#8361#8362#0" expanded="true" />
-            <element signature="e#7765#7766#0" expanded="true" />
+            <element signature="e#7554#7692#0" expanded="true" />
+            <element signature="e#7691#7692#0" expanded="true" />
+            <element signature="e#7979#7980#0" expanded="true" />
           </folding>
         </state>
       </provider>

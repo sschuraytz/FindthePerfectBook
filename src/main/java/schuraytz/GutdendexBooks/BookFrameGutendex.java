@@ -11,14 +11,19 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+import java.awt.Point;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
@@ -56,7 +61,7 @@ public class BookFrameGutendex extends JFrame{
     private GutendexResponse gutendexResponse;
     private List<Result_Gut> bookList;
 
-    private JScrollPane listScroller;
+    private JScrollPane textScroller;
 
 
     public BookFrameGutendex() throws IOException {
@@ -88,15 +93,14 @@ public class BookFrameGutendex extends JFrame{
 
         bookInfo.setLayout(new BorderLayout());
         bookInfo.add(showBook, BorderLayout.NORTH);
-            // this isn't modifying the font
-            // bookInfo.setFont(new Font("Times New Roman", Font.BOLD, 25));
-
-       // listScroller.setHorizontalScrollBar(null);
 
         showBookDetails.setEditable(false);
+
         bookInfo.add(listScrollerSetUp(), BorderLayout.CENTER);
         root.add(bookInfo, BorderLayout.CENTER);
+
         setContentPane(root);
+
 
         loveIt.addActionListener(e -> {
             if (searchTerm_tf.getText().length() > 0 &&
@@ -150,6 +154,12 @@ public class BookFrameGutendex extends JFrame{
                 getMissingInputMessage();
             }
         });
+
+        textScroller.getViewport().addChangeListener(
+                e -> {
+                    JScrollBar sb = textScroller.getVerticalScrollBar();
+                    sb.setValue(sb.getMinimum());
+                });
     }
 
     public void loadBookBasicInfo() throws IOException {
@@ -159,9 +169,9 @@ public class BookFrameGutendex extends JFrame{
         URL text;
 
         Formats formats = result_gut.getFormats();
-        /*if (formats.getText_plain() != null) {
+        if (formats.getText_plain() != null) {
             text = formats.getText_plain();
-        } else*/
+        } else
         if (formats.getText_html() != null) {
             text = formats.getText_html();
         } else if (formats.getText_plaincharset_us_ascii() != null) {
@@ -174,8 +184,6 @@ public class BookFrameGutendex extends JFrame{
 
         readTextFromLink(text);
         showBookDetails.setText(fullText);
-
-
     }
 
     public void loadBookDetailedInfo(){
@@ -252,8 +260,9 @@ public class BookFrameGutendex extends JFrame{
     }
 
     public JScrollPane listScrollerSetUp() {
-        listScroller = new JScrollPane(showBookDetails);
-        return listScroller;
+        textScroller = new JScrollPane(showBookDetails);
+        SwingUtilities.invokeLater(() -> textScroller.getViewport().setViewPosition( new Point(0, 0) ));
+        return textScroller;
     }
 
     public static void main(String[] args) throws IOException {
