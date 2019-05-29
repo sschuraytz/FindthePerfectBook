@@ -11,7 +11,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -111,6 +110,7 @@ public class BookFrameGutendex extends JFrame{
         });
 
         hateIt.addActionListener(e -> {
+            showBookDetails.setText("We do not have free text available for this book.");
             if (searchTerm_tf.getText().length() > 0 &&
                     searchTerm_tf.getText().matches("[A-Za-z]+")) {
                     num = randomNumbers.get(index);
@@ -122,7 +122,6 @@ public class BookFrameGutendex extends JFrame{
                 }
 
             } else {
-                showBookDetails.setText("");
                 getMissingInputMessage();
             }
 
@@ -182,10 +181,6 @@ public class BookFrameGutendex extends JFrame{
 
         readTextFromLink(text);
         showBookDetails.setText(fullText);
-
-        if (fullText == null) {
-            showBookDetails.setText("");
-        }
     }
 
     public void loadBookDetailedInfo(){
